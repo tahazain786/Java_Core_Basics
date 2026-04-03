@@ -1,0 +1,30 @@
+package starter;
+
+
+public class addAvgInt {
+	public static int sumInt(int[] arr ) {
+		int sum = 0;
+		for (int i= 0; i<arr.length; i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
+	public static double avgInt(int[] arr) {
+		double avg = 0.00;
+		int sum = sumInt(arr);
+		avg = sum/ arr.length;
+		return avg;
+	}
+	public static void main(String[] args) {
+		int[] arr = {21,22,33,44,55};
+		for (int i: arr) {
+			System.out.print( i + " + ");
+		}
+		System.out.println(" = " + sumInt(arr));
+		for (int i: arr) {
+			System.out.print( i + " + ");
+		}
+		
+		System.out.println("/ 5 = "+avgInt(arr));
+	}
+}
